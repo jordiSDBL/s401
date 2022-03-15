@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "52017d75-0037-422c-98b0-75c45d621e7d",
+		"name": "Saluda2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Amb PathVariable",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{servidor}}:{{port}}/{{endpoint}}/{{PathVariable}}",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"{{endpoint}}",
+						"{{PathVariable}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sense PathVariable",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{servidor}}:{{port}}/{{endpoint}}",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"{{endpoint}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "endpoint",
+			"value": "HelloWorld2"
+		},
+		{
+			"key": "PathVariable",
+			"value": "Jordi"
+		}
+	]
+}

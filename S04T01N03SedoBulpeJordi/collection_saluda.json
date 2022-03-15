@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "8ce3983c-3d19-4900-a876-186746278596",
+		"name": "Saluda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Amb RequestParam",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{servidor}}:{{port}}/{{endpoint}}/{{RequestParam}}",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"{{endpoint}}",
+						"{{RequestParam}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sense RequestParam",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{servidor}}:{{port}}/{{endpoint}}",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"{{endpoint}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "RequestParam",
+			"value": "?name=Jordi"
+		},
+		{
+			"key": "endpoint",
+			"value": "HelloWorld"
+		}
+	]
+}
